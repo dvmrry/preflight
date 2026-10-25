@@ -1,0 +1,20 @@
+{
+  "name": "preflight",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Checks design exports and Figma files against delivery guidelines, deterministically",
+  "bin": {
+    "preflight": "src/cli.ts"
+  },
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "check": "node src/cli.ts",
+    "build": "bun build src/cli.ts --target=node --format=esm --outfile dist/preflight.mjs",
+    "web": "bun tools/web/build.ts",
+    "app": "sh tools/mac-app/build.sh"
+  }
+}

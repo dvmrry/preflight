@@ -1,0 +1,62 @@
+{
+  "project": "Tunewell — platform & store deliverables (dummy brand, real platform specs)",
+  "notes": "Platform specs from official pages fetched 2026-10-24 (see each 'source'). Items marked 'team choice' are not official.",
+  "naming": {
+    "pattern": "^tunewell_[a-z0-9-]+_(canvas|podcast-cover|yt-thumb|shorts-thumb|appstore-iphone|appstore-ipad|app-preview|play-icon|play-feature|play-screenshot|audio-ad|ad-companion|ig-story)_v\\d+\\.(png|jpe?g|mp4|mov|m4v|wav|mp3|ogg)$",
+    "description": "tunewell_<campaign>_<deliverable>_v<N>.<ext>, lowercase"
+  },
+  "brand": {
+    "palette": ["#7B2FF7", "#12101A", "#FFFFFF", "#F2EEFB", "#FFB547"],
+    "fonts": ["Inter", "Space Grotesk"],
+    "minTextSize": 24,
+    "minContrast": 4.5,
+    "logos": [
+      { "name": "Apple Music badge", "match": "Apple Music badge*", "minHeight": 30, "clearSpace": 0.1,
+        "source": "https://marketing.services.apple/apple-music-identity-guidelines" },
+      { "name": "Spotify logo", "match": "Spotify logo*", "minWidth": 70, "clearSpace": 0.5,
+        "source": "https://developer.spotify.com/documentation/design",
+        "notes": "Full logo 70px minimum; clear space half the icon height (approximated as half the logo height)." }
+    ]
+  },
+  "deliverables": [
+    { "name": "Spotify Canvas", "match": "*_canvas_*", "formats": ["mp4", "jpg"], "aspect": "9:16", "minHeight": 720, "maxHeight": 1080,
+      "video": { "minDurationS": 3, "maxDurationS": 8 },
+      "source": "https://support.spotify.com/us/artists/article/canvas-guidelines/",
+      "notes": "Spotify's page says 'Vertical 9:16' and 'Between 720px - 1080px tall' (checked 2026-10-24). Read literally that is at most 608x1080; a 1080x1920 export fails. Confirm with the team whether to relax maxHeight." },
+    { "name": "Podcast cover", "match": "*_podcast-cover_*", "formats": ["png", "jpg"], "aspect": "1:1", "minWidth": 1400, "maxWidth": 3000,
+      "transparency": "forbidden", "colorMode": ["rgb"], "colorProfile": ["sRGB"],
+      "source": "https://podcasters.apple.com/support/5514-show-cover-template", "notes": "sRGB is a team choice; Apple's page doesn't state a colour space." },
+    { "name": "YouTube thumbnail", "match": "*_yt-thumb_*", "formats": ["jpg", "png"], "aspect": "16:9", "minWidth": 640, "maxWidth": 3840, "maxBytes": 2097152,
+      "source": "https://support.google.com/youtube/answer/72431" },
+    { "name": "YouTube Shorts thumbnail", "match": "*_shorts-thumb_*", "formats": ["jpg", "png"], "aspect": "9:16", "minHeight": 640, "maxHeight": 3840, "maxBytes": 2097152,
+      "source": "https://support.google.com/youtube/answer/72431" },
+    { "name": "App Store screenshot (iPhone)", "match": "*_appstore-iphone_*", "formats": ["jpg", "png"], "transparency": "forbidden", "anyOrientation": true,
+      "sizes": [[1260, 2736], [1290, 2796], [1320, 2868], [1179, 2556], [1206, 2622], [1284, 2778], [1242, 2688], [1170, 2532], [1125, 2436], [1080, 2340], [1242, 2208], [750, 1334]],
+      "source": "https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications/" },
+    { "name": "App Store screenshot (iPad 13\")", "match": "*_appstore-ipad_*", "formats": ["jpg", "png"], "transparency": "forbidden", "anyOrientation": true,
+      "sizes": [[2064, 2752], [2048, 2732]],
+      "source": "https://developer.apple.com/help/app-store-connect/reference/screenshot-specifications/" },
+    { "name": "App Store app preview", "match": "*_app-preview_*", "formats": ["mov", "m4v", "mp4"], "maxBytes": 524288000,
+      "sizes": [[886, 1920], [1080, 1920], [750, 1334], [1200, 1600], [900, 1200], [1920, 886], [1600, 1200], [1920, 1080]],
+      "video": { "maxFps": 30, "codec": ["h264", "prores"], "minDurationS": 15, "maxDurationS": 30,
+                 "audioCodec": ["aac"], "audioChannels": 2, "audioSampleRates": [44100, 48000] },
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-preview-specifications/" },
+    { "name": "Google Play icon", "match": "*_play-icon_*", "formats": ["png"], "width": 512, "height": 512, "maxBytes": 1048576,
+      "source": "https://support.google.com/googleplay/android-developer/answer/9866151" },
+    { "name": "Google Play feature graphic", "match": "*_play-feature_*", "formats": ["jpg", "png"], "width": 1024, "height": 500, "transparency": "forbidden",
+      "source": "https://support.google.com/googleplay/android-developer/answer/9866151" },
+    { "name": "Google Play screenshot", "match": "*_play-screenshot_*", "formats": ["jpg", "png"], "transparency": "forbidden",
+      "minWidth": 320, "minHeight": 320, "maxWidth": 3840, "maxHeight": 3840, "maxLongToShort": 2,
+      "source": "https://support.google.com/googleplay/android-developer/answer/9866151" },
+    { "name": "Spotify audio ad", "match": "*_audio-ad_*", "formats": ["wav", "mp3", "ogg"],
+      "video": { "audio": "required", "audioSampleRates": [44100], "minAudioBitrateKbps": 192,
+                 "loudness": { "targetLufs": -16, "tolerance": 1.5, "maxTruePeakDb": -2 } },
+      "source": "https://ads.spotify.com/en-US/ad-experiences/audio-ads-specs", "notes": "Secondary: official page couldn't be fetched; regional pages disagree on file size, so none is set." },
+    { "name": "Spotify ad companion image", "match": "*_ad-companion_*", "formats": ["jpg", "png"], "width": 640, "height": 640, "maxBytes": 200000,
+      "source": "https://ads.spotify.com/en-US/ad-experiences/audio-ads-specs", "notes": "Secondary source." },
+    { "name": "Instagram story / reel", "match": "*_ig-story_*", "formats": ["mp4", "mov", "png", "jpg"], "width": 1080, "height": 1920,
+      "safeArea": { "top": 270, "bottom": 670, "left": 65, "right": 65 },
+      "video": { "codec": ["h264"], "maxDurationS": 60 },
+      "notes": "Team choice: safe area approximates Meta's ad guidance (~14% top, ~35% bottom, ~6% sides); not verified." }
+  ]
+}

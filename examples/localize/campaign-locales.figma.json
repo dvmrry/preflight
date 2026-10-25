@@ -1,0 +1,441 @@
+{
+ "name": "Tunewell fall — localised stories (demo)",
+ "document": {
+  "id": "0:0",
+  "type": "DOCUMENT",
+  "children": [
+   {
+    "id": "0:1",
+    "name": "Localised",
+    "type": "CANVAS",
+    "children": [
+     {
+      "id": "fen",
+      "name": "tunewell_fall_ig-story_v1_en",
+      "type": "FRAME",
+      "absoluteBoundingBox": {
+       "x": 0,
+       "y": 0,
+       "width": 1080,
+       "height": 1920
+      },
+      "size": {
+       "x": 1080,
+       "y": 1920
+      },
+      "fills": [
+       {
+        "type": "SOLID",
+        "color": {
+         "r": 0.6353,
+         "g": 0.2196,
+         "b": 1.0,
+         "a": 1
+        }
+       }
+      ],
+      "children": [
+       {
+        "id": "en0",
+        "name": "Kicker",
+        "type": "TEXT",
+        "characters": "NEW THIS FALL",
+        "absoluteBoundingBox": {
+         "x": 80,
+         "y": 300,
+         "width": 920,
+         "height": 60
+        },
+        "fills": [
+         {
+          "type": "SOLID",
+          "color": {
+           "r": 1.0,
+           "g": 1.0,
+           "b": 1.0,
+           "a": 1
+          }
+         }
+        ],
+        "style": {
+         "fontFamily": "Tunewell Display",
+         "fontSize": 40,
+         "fontWeight": 700
+        },
+        "styles": {
+         "text": "S:Kicker"
+        }
+       },
+       {
+        "id": "en1",
+        "name": "Headline",
+        "type": "TEXT",
+        "characters": "Your fall Mix is ready",
+        "absoluteBoundingBox": {
+         "x": 80,
+         "y": 700,
+         "width": 920,
+         "height": 240
+        },
+        "fills": [
+         {
+          "type": "SOLID",
+          "color": {
+           "r": 1.0,
+           "g": 1.0,
+           "b": 1.0,
+           "a": 1
+          }
+         }
+        ],
+        "style": {
+         "fontFamily": "Tunewell Display",
+         "fontSize": 96,
+         "fontWeight": 700
+        },
+        "styles": {
+         "text": "S:Headline"
+        }
+       },
+       {
+        "id": "en2",
+        "name": "CTA",
+        "type": "TEXT",
+        "characters": "Listen now",
+        "absoluteBoundingBox": {
+         "x": 80,
+         "y": 1150,
+         "width": 920,
+         "height": 80
+        },
+        "fills": [
+         {
+          "type": "SOLID",
+          "color": {
+           "r": 1.0,
+           "g": 1.0,
+           "b": 1.0,
+           "a": 1
+          }
+         }
+        ],
+        "style": {
+         "fontFamily": "Tunewell Sans",
+         "fontSize": 48,
+         "fontWeight": 700
+        },
+        "styles": {
+         "text": "S:CTA"
+        }
+       },
+       {
+        "id": "en3",
+        "name": "Legal",
+        "type": "TEXT",
+        "characters": "Offer subject to conditions. Ends 31 October.",
+        "absoluteBoundingBox": {
+         "x": 80,
+         "y": 1200,
+         "width": 920,
+         "height": 40
+        },
+        "fills": [
+         {
+          "type": "SOLID",
+          "color": {
+           "r": 1.0,
+           "g": 1.0,
+           "b": 1.0,
+           "a": 1
+          }
+         }
+        ],
+        "style": {
+         "fontFamily": "Tunewell Sans",
+         "fontSize": 24,
+         "fontWeight": 700
+        },
+        "styles": {
+         "text": "S:Legal"
+        }
+       }
+      ]
+     },
+     {
+      "id": "ffr",
+      "name": "tunewell_fall_ig-story_v1_fr",
+      "type": "FRAME",
+      "absoluteBoundingBox": {
+       "x": 1200,
+       "y": 0,
+       "width": 1080,
+       "height": 1920
+      },
+      "size": {
+       "x": 1080,
+       "y": 1920
+      },
+      "fills": [
+       {
+        "type": "SOLID",
+        "color": {
+         "r": 0.6353,
+         "g": 0.2196,
+         "b": 1.0,
+         "a": 1
+        }
+       }
+      ],
+      "children": [
+       {
+        "id": "fr0",
+        "name": "Kicker",
+        "type": "TEXT",
+        "characters": "NOUVEAU CET AUTOMNE",
+        "absoluteBoundingBox": {
+         "x": 1280,
+         "y": 300,
+         "width": 920,
+         "height": 60
+        },
+        "fills": [
+         {
+          "type": "SOLID",
+          "color": {
+           "r": 1.0,
+           "g": 1.0,
+           "b": 1.0,
+           "a": 1
+          }
+         }
+        ],
+        "style": {
+         "fontFamily": "Tunewell Display",
+         "fontSize": 40,
+         "fontWeight": 700
+        },
+        "styles": {
+         "text": "S:Kicker"
+        }
+       },
+       {
+        "id": "fr1",
+        "name": "Headline",
+        "type": "TEXT",
+        "characters": "Your fall Mix is ready",
+        "absoluteBoundingBox": {
+         "x": 1280,
+         "y": 700,
+         "width": 920,
+         "height": 240
+        },
+        "fills": [
+         {
+          "type": "SOLID",
+          "color": {
+           "r": 1.0,
+           "g": 1.0,
+           "b": 1.0,
+           "a": 1
+          }
+         }
+        ],
+        "style": {
+         "fontFamily": "Tunewell Display",
+         "fontSize": 96,
+         "fontWeight": 700
+        },
+        "styles": {
+         "text": "S:Headline"
+        }
+       },
+       {
+        "id": "fr2",
+        "name": "CTA",
+        "type": "TEXT",
+        "characters": "Écouter maintenant",
+        "absoluteBoundingBox": {
+         "x": 1280,
+         "y": 1150,
+         "width": 920,
+         "height": 80
+        },
+        "fills": [
+         {
+          "type": "SOLID",
+          "color": {
+           "r": 1.0,
+           "g": 1.0,
+           "b": 1.0,
+           "a": 1
+          }
+         }
+        ],
+        "style": {
+         "fontFamily": "Tunewell Sans",
+         "fontSize": 48,
+         "fontWeight": 700
+        },
+        "styles": {
+         "text": "S:CTA"
+        }
+       }
+      ]
+     },
+     {
+      "id": "fde",
+      "name": "tunewell_fall_ig-story_v1_de",
+      "type": "FRAME",
+      "absoluteBoundingBox": {
+       "x": 2400,
+       "y": 0,
+       "width": 1080,
+       "height": 1920
+      },
+      "size": {
+       "x": 1080,
+       "y": 1920
+      },
+      "fills": [
+       {
+        "type": "SOLID",
+        "color": {
+         "r": 0.6353,
+         "g": 0.2196,
+         "b": 1.0,
+         "a": 1
+        }
+       }
+      ],
+      "children": [
+       {
+        "id": "de0",
+        "name": "Kicker",
+        "type": "TEXT",
+        "characters": "NEW THIS FALL",
+        "absoluteBoundingBox": {
+         "x": 2480,
+         "y": 300,
+         "width": 920,
+         "height": 60
+        },
+        "fills": [
+         {
+          "type": "SOLID",
+          "color": {
+           "r": 1.0,
+           "g": 1.0,
+           "b": 1.0,
+           "a": 1
+          }
+         }
+        ],
+        "style": {
+         "fontFamily": "Tunewell Display",
+         "fontSize": 40,
+         "fontWeight": 700
+        },
+        "styles": {
+         "text": "S:Kicker"
+        }
+       },
+       {
+        "id": "de1",
+        "name": "Headline",
+        "type": "TEXT",
+        "characters": "Dein Herbst-Mix ist bereit",
+        "absoluteBoundingBox": {
+         "x": 2480,
+         "y": 700,
+         "width": 920,
+         "height": 240
+        },
+        "fills": [
+         {
+          "type": "SOLID",
+          "color": {
+           "r": 1.0,
+           "g": 1.0,
+           "b": 1.0,
+           "a": 1
+          }
+         }
+        ],
+        "style": {
+         "fontFamily": "Tunewell Display",
+         "fontSize": 96,
+         "fontWeight": 700
+        },
+        "styles": {
+         "text": "S:Headline"
+        }
+       },
+       {
+        "id": "de2",
+        "name": "CTA",
+        "type": "TEXT",
+        "characters": "Jetzt anhörem",
+        "absoluteBoundingBox": {
+         "x": 2480,
+         "y": 1150,
+         "width": 920,
+         "height": 80
+        },
+        "fills": [
+         {
+          "type": "SOLID",
+          "color": {
+           "r": 1.0,
+           "g": 1.0,
+           "b": 1.0,
+           "a": 1
+          }
+         }
+        ],
+        "style": {
+         "fontFamily": "Tunewell Sans",
+         "fontSize": 48,
+         "fontWeight": 700
+        },
+        "styles": {
+         "text": "S:CTA"
+        }
+       },
+       {
+        "id": "de3",
+        "name": "Legal",
+        "type": "TEXT",
+        "characters": "Angebot unterliegt Bedingungen. Endet am 30. Oktober.",
+        "absoluteBoundingBox": {
+         "x": 2480,
+         "y": 1200,
+         "width": 920,
+         "height": 40
+        },
+        "fills": [
+         {
+          "type": "SOLID",
+          "color": {
+           "r": 1.0,
+           "g": 1.0,
+           "b": 1.0,
+           "a": 1
+          }
+         }
+        ],
+        "style": {
+         "fontFamily": "Tunewell Sans",
+         "fontSize": 24,
+         "fontWeight": 700
+        },
+        "styles": {
+         "text": "S:Legal"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

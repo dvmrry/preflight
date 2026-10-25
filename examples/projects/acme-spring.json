@@ -1,0 +1,24 @@
+{
+  "project": "Acme spring launch (dummy)",
+  "naming": {
+    "pattern": "^acme-spring_(ig-feed|ig-story|banner|logo)_v\\d+\\.(png|jpe?g|mp4)$",
+    "description": "acme-spring_<deliverable>_v<N>.<ext>, lowercase, no spaces"
+  },
+  "brand": {
+    "palette": ["#FF5A1F", "#1B1B1F", "#FFFFFF", "#F4E9DA"],
+    "fonts": ["Inter", "Recoleta"],
+    "minTextSize": 12,
+    "minContrast": 4.5
+  },
+  "deliverables": [
+    { "name": "Instagram feed post", "match": "*_ig-feed_*", "width": 1080, "height": 1350, "formats": ["jpg", "png"],
+      "maxBytes": 8000000, "colorProfile": ["sRGB"], "colorMode": ["rgb"] },
+    { "name": "Web banner", "match": "*banner*", "width": 1200, "height": 628, "formats": ["jpg"],
+      "maxBytes": 1000000, "colorProfile": ["sRGB"], "colorMode": ["rgb"] },
+    { "name": "Logo", "match": "*_logo*", "width": 512, "height": 512, "formats": ["png"],
+      "colorProfile": ["sRGB"], "transparency": "required" },
+    { "name": "Instagram story video", "match": "*_ig-story_*", "width": 1080, "height": 1920, "formats": ["mp4"],
+      "video": { "fps": 30, "codec": ["h264"], "maxDurationS": 15, "audio": "required",
+                 "loudness": { "targetLufs": -14, "tolerance": 1, "maxTruePeakDb": -1 }, "maxBlackAtEdgesS": 0.5 } }
+  ]
+}

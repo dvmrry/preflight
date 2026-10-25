@@ -1,0 +1,41 @@
+date,campaign,asset,reviewer,comment
+2026-03-04,spring-mix,tunewell_spring_ig-story_v1.png,brand,"logo feels tiny here, can we bump the store badges? they're unreadable on phones"
+2026-03-04,spring-mix,tunewell_spring_ig-story_v1.png,social,CTA is sitting right under the IG reply bar again. move it up please
+2026-03-05,spring-mix,tunewell_spring_appstore-iphone_v2.png,brand,this purple isn't ours. looks like #9B30FF? use Tunewell Violet
+2026-03-05,spring-mix,tunewell_spring_appstore-iphone_v2.png,product,screenshot shows the old player UI. we shipped the new one in feb
+2026-03-06,spring-mix,tunewell_spring_yt-thumb_v1.jpg,video,thumbnail came in at 1280x960?? YT is 16:9
+2026-03-06,spring-mix,tunewell_spring_canvas_v1.mp4,video,canvas is 11 seconds. max is 8
+2026-03-07,spring-mix,tunewell_spring_ig-story_v2.png,legal,FR version is missing the legal line (offre soumise à conditions)
+2026-03-07,spring-mix,tunewell_spring_ig-story_v2_de.png,localisation,German headline overflows the box and gets cut off
+2026-03-08,spring-mix,tunewell_spring_podcast-cover_v1.png,brand,"cover has a transparent background, Apple will reject it"
+2026-03-08,spring-mix,tunewell_spring_ig-feed_v3.png,brand,font on the subline is Helvetica not Tunewell Sans
+2026-04-02,artist-spotlight,tunewell_spot_ig-story_v1.png,social,text in the top 250px gets covered by the profile row
+2026-04-02,artist-spotlight,tunewell_spot_ig-story_v1.png,brand,artist photo crops through the top of her head in the 9:16 version
+2026-04-03,artist-spotlight,tunewell_spot_appstore-iphone_v1.png,brand,"the dark background is #12101A, should be our #0F0D13"
+2026-04-03,artist-spotlight,tunewell_spot_ad-companion_v1.jpg,ads,companion image is 600KB. ad server limit is 200KB
+2026-04-04,artist-spotlight,tunewell_spot_audio-ad_v1.mp3,audio,ad is way too loud compared to the music. needs to sit around -16
+2026-04-04,artist-spotlight,tunewell_spot_ig-story_v1.png,brand,tone is too corporate for a spotlight. more playful please
+2026-04-05,artist-spotlight,tunewell_spot_ig-feed_v1.png,legal,artist name spelled wrong in the caption overlay (Rosalia → Rosalía)
+2026-04-05,artist-spotlight,tunewell_spot_ig-story_v2_fr.png,localisation,FR CTA still says 'Listen now'. should be Écouter
+2026-05-10,summer-hits,tunewell_summer_appstore-iphone_v1.png,product,exported at 2x again. 2580 wide. please export 1x
+2026-05-10,summer-hits,tunewell_summer_appstore-iphone_v2.png,product,PNG has an alpha channel. App Store rejects that
+2026-05-11,summer-hits,tunewell_summer_ig-story_v1.png,social,CTA in the bottom third again… the reply bar covers it
+2026-05-11,summer-hits,tunewell_summer_banner_v1.jpg,brand,banner exported in CMYK. colours look washed out on web
+2026-05-12,summer-hits,tunewell_summer_ig-story_v1.png,brand,"caption text in lilac on purple, can't read it"
+2026-05-12,summer-hits,tunewell_summer_yt-thumb_v2.png,video,thumbnail is 4MB. YouTube caps at 2
+2026-05-13,summer-hits,tunewell_summer_ig-story_v1_de.png,localisation,typo in German CTA: 'anhörem'
+2026-05-13,summer-hits,tunewell_summer_ig-feed_v2.png,brand,why is the wave mark stretched horizontally?
+2026-05-14,summer-hits,tunewell_summer_play-feature_v1.png,product,feature graphic is 1024x512. Play needs 1024x500 exactly
+2026-06-20,fall-preview,tunewell_fall_ig-story_v1.png,social,again: nothing important in the bottom 670px on stories
+2026-06-20,fall-preview,tunewell_fall_ig-story_v1.png,brand,badge is under 40px. minimum is 40
+2026-06-21,fall-preview,tunewell_fall_appstore-iphone_v1.png,brand,legal line at 18px is too small to read. 24 minimum
+2026-06-21,fall-preview,tunewell_fall_canvas_v2.mp4,video,"canvas has a full second of black at the start, looks broken in the app"
+2026-06-22,fall-preview,tunewell_fall_ig-story_v1_fr.png,localisation,"headline is still English in the FR set"
+2026-06-22,fall-preview,tunewell_fall_app-preview_v1.mp4,product,app preview is 60fps. App Store wants 30 max
+2026-06-23,fall-preview,tunewell_fall_ig-feed_v1.png,brand,"this one's great, love the energy"
+2026-06-23,fall-preview,tunewell_fall_appstore-iphone_v3.png,brand,"the purple in the button is #7F35F0, close but not Tunewell Violet"
+2026-06-24,fall-preview,tunewell_fall_ig-story_v2.png,brand,wave mark has a drop shadow added. brand says no effects on the logo
+2026-06-24,fall-preview,tunewell_fall_podcast-cover_v2.png,brand,cover is 1200x1200. Apple minimum is 1400
+2026-06-25,fall-preview,tunewell_fall_ig-story_v3.png,brand,two different greys used for the same caption style
+2026-06-25,fall-preview,Acme Fall Story FINAL.png,ops,"file names, people. tunewell_<campaign>_<deliverable>_v<N>"
+2026-06-26,fall-preview,tunewell_fall_ig-story_v3_de.png,localisation,German version is missing the legal line entirely

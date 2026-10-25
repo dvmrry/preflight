@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Preflight — check design exports in your browser</title>
+<meta name="description" content="Drop design exports and Figma files; Preflight checks them against delivery guidelines. Everything runs in your browser — nothing is uploaded.">
+<style>
+:root{--brand:#3B5BDB;--ink:#111318;--ink-2:#5B6170;--base:#F4F5F8;--paper:#fff;--line:#CDD1DA;--glass:rgba(255,255,255,.72);
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--ink:#F4F5F8;--ink-2:#A6ACB8;--base:#111318;--paper:#232630;--line:#4A4F5E;--glass:rgba(35,38,48,.72)}}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--base);color:var(--ink);font:15px/1.45 var(--font)}
+header{position:sticky;top:0;z-index:2;display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;padding:12px 18px;
+  background:var(--glass);backdrop-filter:saturate(1.6) blur(18px);-webkit-backdrop-filter:saturate(1.6) blur(18px);border-bottom:1px solid color-mix(in srgb,var(--line) 60%,transparent)}
+header h1{font-size:17px;margin:0 6px 0 0;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
+header h1 svg{flex:none}
+label{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink-2)}
+select{max-width:240px;text-overflow:ellipsis}
+select,button{font:inherit;font-size:13px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
+button.primary{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+button:focus-visible,select:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.spacer{flex:1}
+#status{font-size:13px;color:var(--ink-2);flex-basis:100%;min-height:1em}
+main{height:calc(100% - 96px)}
+#empty{max-width:680px;margin:8vh auto;padding:36px 32px;text-align:center;background:var(--glass);border:1px solid color-mix(in srgb,var(--line) 70%,transparent);
+  border-radius:28px;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 10px 40px rgba(0,0,0,.08)}
+#empty h2{font-size:26px;margin:12px 0 8px;letter-spacing:-.01em}
+#empty p{color:var(--ink-2);margin:0 0 18px}
+#empty .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+#empty small{display:block;margin-top:18px;color:var(--ink-2)}
+#report{border:0;width:100%;height:100%;display:block;background:var(--base)}
+body.dragging #empty,body.dragging #report{outline:3px dashed var(--brand);outline-offset:-10px}
+.has-report #empty{display:none}
+@media (max-width:640px){header{padding:10px 12px}#empty{margin:4vh 12px;padding:26px 18px}#empty h2{font-size:21px}main{height:calc(100% - 140px)}}
+</style>
+</head>
+<body>
+<header>
+  <h1><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="var(--brand)"/><path d="M6.5 12.5l3.4 3.4L17.5 8.3" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Preflight</h1>
+  <label>Guidelines <select id="guidelines" aria-label="Guidelines"></select></label>
+  <label>Brand <select id="brand" aria-label="Brand profile"></select></label>
+  <span class="spacer"></span>
+  <button id="choose">Choose files…</button>
+  <button id="chooseFolder">Choose folder…</button>
+  <button id="saveHtml">Save report</button>
+  <button id="saveJson">JSON</button>
+  <div id="status" role="status" aria-live="polite"></div>
+</header>
+<main>
+  <section id="empty">
+    <svg width="54" height="54" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.3 1.7 2.8-.2.9 2.7 2.3 1.6-.9 2.7.9 2.7-2.3 1.6-.9 2.7-2.8-.2L12 21.5l-2.3-1.7-2.8.2-.9-2.7-2.3-1.6.9-2.7-.9-2.7 2.3-1.6.9-2.7 2.8.2z" fill="none" stroke="var(--brand)" stroke-width="1.3"/><path d="M8.6 12.2l2.3 2.3 4.6-4.8" fill="none" stroke="var(--brand)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <h2>Drop exports to preflight</h2>
+    <p>Images, video, audio, whole folders, or a Figma file exported as JSON. The matching guidelines are picked for you;
+      the report shows what fails the spec, how to fix it, and what needs a human eye.</p>
+    <div class="row"><button class="primary" id="demo">Try the demo files</button></div>
+    <small>Everything runs in your browser. Files are never uploaded. Video frame rate, codec and loudness need the
+      Preflight app or CLI; here only size and length are read.</small>
+  </section>
+  <iframe id="report" title="Preflight report" hidden></iframe>
+</main>
+<script src="app.js" type="module"></script>
+</body>
+</html>

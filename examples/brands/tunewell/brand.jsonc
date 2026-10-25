@@ -1,0 +1,13 @@
+// Tunewell — a made-up music brand for demos. Shows what a brand profile changes: colours, fonts, logo, header mark.
+{
+  "name": "Tunewell",
+  "logo": "logo.svg",
+  "mark": "mark.svg",
+  "fonts": { "head": "\"Avenir Next\", -apple-system, \"Segoe UI\", sans-serif", "headCase": "none" },
+  "colors": {
+    "brand": "#7B2FF7", "brand-strong": "#5E1DC4", "brand-soft": "#F2EEFB", "brand-ink": "#2A1352",
+    "head": "#12101A", "head-2": "#1C1826", "head-accent": "#FFB547",
+    "info": "#7B2FF7", "info-text": "#5E1DC4",
+  },
+  "colorsDark": { "brand-soft": "#2A1352", "brand-strong": "#C9A8FF", "info-text": "#C9A8FF" },
+}
